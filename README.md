@@ -22,9 +22,3 @@ This repository contains six selected JFLAP practicals. The `.jff` files are edi
 
 ## Software
 JFLAP is required to open, edit, run and verify the `.jff` files. Download it from the official JFLAP website: https://www.jflap.org/. The exact installer/version may vary by platform.
-
-## Verification note
-Expected outcomes are documented in each folder. Open each file in JFLAP and execute the test strings using the relevant Run/Multiple Run menu before treating the practical as fully verified. Conversion outputs should also be regenerated through the JFLAP conversion interface for a direct visual comparison.
-
-## Submission details
-Files follow the naming pattern `18_Aayush_Jadhav_Topic_16-11-2026`.
