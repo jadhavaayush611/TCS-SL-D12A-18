@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+  <type>fa</type>
+  <automaton>
+    <state id="0" name="q0">
+      <x>100</x>
+      <y>180</y>
+      <label>Prefix scan</label>
+      <initial/>
+    </state>
+    <state id="1" name="q1">
+      <x>280</x>
+      <y>80</y>
+      <label>Matched 1</label>
+    </state>
+    <state id="2" name="q2">
+      <x>440</x>
+      <y>180</y>
+      <label>Matched 10</label>
+    </state>
+    <state id="3" name="q3">
+      <x>610</x>
+      <y>180</y>
+      <label>Found 101</label>
+      <final/>
+    </state>
+    <transition>
+      <from>0</from>
+      <to>0</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>0</from>
+      <to>0</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>0</from>
+      <to>1</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>2</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>3</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>3</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>3</to>
+      <read>1</read>
+    </transition>
+  </automaton>
+</structure>

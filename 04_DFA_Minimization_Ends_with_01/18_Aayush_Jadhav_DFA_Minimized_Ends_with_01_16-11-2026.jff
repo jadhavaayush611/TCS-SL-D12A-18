@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+  <type>fa</type>
+  <automaton>
+    <state id="0" name="A">
+      <x>120</x>
+      <y>170</y>
+      <label>[q0] – Start</label>
+      <initial/>
+    </state>
+    <state id="1" name="B">
+      <x>330</x>
+      <y>80</y>
+      <label>[q1,q3] – Trailing 0</label>
+    </state>
+    <state id="2" name="C">
+      <x>530</x>
+      <y>170</y>
+      <label>[q2,q4] – Trailing 01</label>
+      <final/>
+    </state>
+    <transition>
+      <from>0</from>
+      <to>1</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>0</from>
+      <to>0</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>1</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>2</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>1</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>0</to>
+      <read>1</read>
+    </transition>
+  </automaton>
+</structure>

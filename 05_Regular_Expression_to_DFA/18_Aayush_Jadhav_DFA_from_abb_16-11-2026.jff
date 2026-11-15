@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+  <type>fa</type>
+  <automaton>
+    <state id="0" name="q0">
+      <x>110</x>
+      <y>170</y>
+      <label>No suffix matched</label>
+      <initial/>
+    </state>
+    <state id="1" name="q1">
+      <x>280</x>
+      <y>70</y>
+      <label>Suffix a</label>
+    </state>
+    <state id="2" name="q2">
+      <x>450</x>
+      <y>170</y>
+      <label>Suffix ab</label>
+    </state>
+    <state id="3" name="q3">
+      <x>620</x>
+      <y>170</y>
+      <label>Suffix abb</label>
+      <final/>
+    </state>
+    <transition>
+      <from>0</from>
+      <to>1</to>
+      <read>a</read>
+    </transition>
+    <transition>
+      <from>0</from>
+      <to>0</to>
+      <read>b</read>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>1</to>
+      <read>a</read>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>2</to>
+      <read>b</read>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>1</to>
+      <read>a</read>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>3</to>
+      <read>b</read>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>1</to>
+      <read>a</read>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>0</to>
+      <read>b</read>
+    </transition>
+  </automaton>
+</structure>
